@@ -1,0 +1,67 @@
+{
+  "company": {
+    "name": "React landing page 2021",
+    "logo": "/assets/images/logo.png"
+  },
+  "navigation": [],
+  "callToAction": {
+    "text": "Get started",
+    "href": "#"
+  },
+  "mainHero": {
+    "title": "Elevate Your Job Opportunities ",
+    "subtitle": "with Resume Scanner.",
+    "description": "Accelerate your journey to your dream job with an ATS-optimized resume. Effectively showcase your essential skills using our resume scanner, guaranteeing you outshine the competition.",
+    "img": "/assets/images/happyTeam.jpeg",
+    "primaryAction": {
+      "text": "Get started",
+      "href": "#"
+    }
+  },
+  "product": {
+    "title": "Kep Features",
+    "items": [
+      {
+        "title": "Fine-tune Your Resume for ATS Compatibility",
+        "description": "Our ATS resume checker meticulously analyzes your resume against authentic job listings, offering precise guidance on optimizing your resume to align with each company’s ATS",
+        "img": "/assets/images/product1.jpg"
+      },
+      {
+        "title": "Spotlight Your Key Skills!",
+        "description": "Given the unique needs and criteria of each company for similar roles, Resume ATS ensures that your resume accentuates the most pertinent skills and work experience for every job application you pursue.",
+        "img": "/assets/images/product2.jpg"
+      }
+    ]
+  },
+ 
+
+  "about": {
+    "sections": [
+      {
+        "name": "Something",
+        "href": "#",
+        "content": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English."
+      },
+      {
+        "name": "Something",
+        "href": "#",
+        "content": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English."
+      },
+      {
+        "name": "Something",
+        "href": "#",
+        "content": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English."
+      },
+      {
+        "name": "Something",
+        "href": "#",
+        "content": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English."
+      }
+    ],
+    "socialMedia": {
+      "github": "https://github.com/issaafalkattan",
+      "twitter": "https://twitter.com/issaafkattan",
+      "linkedin": "https://www.linkedin.com/in/issaaf-kattan/"
+    }
+  }
+}
