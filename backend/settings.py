@@ -12,7 +12,7 @@ https://docs.djangoproject.com/en/4.2/ref/settings/
 
 from pathlib import Path
 from dotenv import load_dotenv
-
+import os
 # Load environment variables from .env file
 load_dotenv()
 
@@ -29,7 +29,7 @@ SECRET_KEY = 'django-insecure-6vt0k453)fn#c&fv)7jk0h9ty=pb=#od^11o^+*l1@-fiei@uh
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["*"]
+ALLOWED_HOSTS = ['127.0.0.1', '.vercel.app']
 CORS_ORIGIN_ALLOW_ALL = True
 
 
@@ -43,7 +43,10 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'rest_framework',
-    'ats'
+    'ats',
+    'create_react_app',
+    'dashboard',
+    "django_nextjs",
 ]
 
 MIDDLEWARE = [
@@ -76,7 +79,21 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'backend.wsgi.application'
+REACT_BUILD_DIRECTORY = os.path.join(BASE_DIR, 'frontend', 'build')
+print(REACT_BUILD_DIRECTORY)
+STATICFILES_DIRS = (
+    os.path.join(REACT_BUILD_DIRECTORY, 'static'),
+)
+
+CREATE_REACT_APP = {
+        'DEFAULT': {
+            'BUNDLE_DIR_NAME': REACT_BUILD_DIRECTORY,  
+            'FRONT_END_SERVER': "http://localhost:3000/",
+            'IS_DEV': False,
+        }
+    }
+
+WSGI_APPLICATION = 'api.wsgi.app'
 
 REST_FRAMEWORK = {
     'DEFAULT_PERMISSION_CLASSES': [
@@ -134,3 +151,5 @@ MEDIA_ROOT = "media/"
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+STATIC_ROOT="static"

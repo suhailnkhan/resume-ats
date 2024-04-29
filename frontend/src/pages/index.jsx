@@ -13,6 +13,7 @@ const App = () => {
     ref.current.scrollIntoView({ behavior: "smooth" });
   };
 
+  
   return (
     <div className={`bg-background grid gap-y-16 overflow-hidden`}>
       <div className={`relative bg-background`}>

@@ -19,5 +19,7 @@ from django.urls import path , include
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('api/' , include('ats.urls'))
+    path('api/' , include('ats.urls')),
+    path('' , include('dashboard.urls')),
+    path("", include("django_nextjs.urls")),
 ]

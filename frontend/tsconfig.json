@@ -36,5 +36,5 @@
     "incremental": true
   },
   "exclude": ["./out/**/*", "./node_modules/**/*"],
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "src/components/wizard.jsx", "src/hooks/useApi.js"]
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "src/components/wizard.jsx", "src/hooks/useApi.js", "src/components/Header.jsx", "src/pages/index.jsx", "src/components/MainHero.jsx", "src/components/Steps/result.jsx", "src/components/Steps/step1.jsx", "src/components/Steps/step2.jsx", "src/pages/_app.jsx", "src/pages/_document.jsx"]
 }
